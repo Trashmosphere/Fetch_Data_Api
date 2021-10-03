@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./tle2czml-master/tle2czml"
+    ]
+}
