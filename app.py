@@ -18,9 +18,12 @@ def space_objects_tle():
 
     return db_create_czml(tleData.read())
 
-def converter(tleFilePath, czmlFilePath):
+@app.route("/getData")
+@cross_origin()
+def converter():
     result = spaceObjectsDataAccess.retrieve_tle_entries()
-    create_czml(result,czmlFilePath)
+    return db_create_czml(result)
+    
 
 @app.route("/test")
 @cross_origin()
