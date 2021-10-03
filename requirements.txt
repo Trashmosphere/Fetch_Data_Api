@@ -1,4 +1,4 @@
-mariadb
+mariadb==1.0.2
 Flask
 gunicorn
 auto-py-to-exe
