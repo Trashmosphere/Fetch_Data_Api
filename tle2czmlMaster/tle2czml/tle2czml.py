@@ -338,10 +338,17 @@ def create_czml(inputfile_path, outputfile_path=None, start_time=None, end_time=
     """
     Takes in a file of TLE's and returns a CZML file visualising their orbits.
     """
+    """
     with open(inputfile_path, 'r') as tle_src:
+        #print(tle_src.read())
         doc = tles_to_czml(
             tle_src.read(), start_time=start_time, end_time=end_time)
         if not outputfile_path:
             outputfile_path = "orbit.czml"
         with open(outputfile_path, 'w') as file:
             file.write(str(doc))
+    """
+
+def db_create_czml(inputData, start_time=None, end_time=None):
+    doc=tles_to_czml(inputData, start_time=start_time, end_time=end_time)
+    return str(doc)

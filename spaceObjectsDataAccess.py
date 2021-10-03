@@ -17,7 +17,7 @@ def retrieve_tle_entries():
 
     arr=[]
 
-    cursor.execute("SELECT * FROM spaceObjectTle")
+    cursor.execute("SELECT * FROM spaceObjectTle LIMIT 4")
     for entry in cursor:
         arr.append(entry)
 
