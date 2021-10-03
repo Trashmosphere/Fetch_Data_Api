@@ -1,3 +1,4 @@
+mariadb
 Flask
 gunicorn
 auto-py-to-exe
