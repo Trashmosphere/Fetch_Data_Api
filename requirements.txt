@@ -4,4 +4,3 @@ auto-py-to-exe
 flask-cors
 configparser
 configParser
-libmysqlclient-dev
