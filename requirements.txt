@@ -3,3 +3,5 @@ Flask==2.0.1
 gunicorn
 auto-py-to-exe
 flask-cors
+configparser
+configParser
